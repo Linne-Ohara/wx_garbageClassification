@@ -1,0 +1,20 @@
+<!--rubbishDiscriminate/picDiscriminate/page_char.wxml-->
+<view class="inputname">
+    <!-- <text class="textnormal">{{completed}}</text> -->
+    <!-- <text class="textnormal">测试数据</text> -->
+    <input class="textnormal" bindinput="name" value="{{name_value}}" placeholder="请输入要查询的垃圾名称"></input>
+</view>
+<view>
+  <view class="rubbishIndex">
+    <view class="rubbishIndexName">垃圾名称</view>
+    <view class="rubbishIndexType">垃圾种类</view>
+  </view>
+  <view wx:for="{{responseToArr}}" wx:key="111" class="rubbishItem">
+    <view class="rubbishIndexName">{{item.rubbishName}}</view>
+    <view class="rubbishIndexType">{{item.rubbishType}}</view>
+  </view>
+</view>
+<!-- <text>
+{{jieguo}}
+
+</text>  -->

@@ -1,0 +1,44 @@
+/* pages/mine/shop_jifen/goods_introduct/exchange_good/exchange_good.wxss */
+.tipOrderInformation {
+ font-size: large;
+ font-weight: 700; 
+}
+
+.goodInformationPic{
+  display: block;
+  margin: auto;
+  width: 640rpx;
+  height: 480rpx;
+}
+
+.informationText {
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: #FFFAF0;
+  border: darkgrey 3rpx solid;
+  text-align: center;
+}
+
+#address {
+  display: flex;
+  flex-direction: row;
+}
+
+.addressName {
+  width: 20vw;
+  border-right: darkgrey 6rpx solid;
+  text-align: center;
+  /* background-color: aquamarine; */
+}
+
+.addressInput {
+  width: 80vw;
+  height: 100%;
+  text-align: center;
+  /* background-color: cadetblue; */
+}
+
+.exchangeGood {
+  background-color: rgb(72, 206, 105);
+}

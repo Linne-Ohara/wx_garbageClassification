@@ -1,0 +1,7 @@
+<!--pages/news/news.wxml-->
+<view class="containerMain">
+  <block wx:for="{{namelist}}" wx:for-item="item" wx:key="index">   
+    <view bindtap="news1" data-id="{{index}}" class="itemNew">{{index+1}}:{{item}}</view>
+  </block>
+</view>
+

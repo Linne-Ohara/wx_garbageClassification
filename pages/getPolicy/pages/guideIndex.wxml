@@ -1,0 +1,7 @@
+<!--pages/zhence/zhence.wxml-->
+<view>
+  <text>垃圾分类政策:{{policy}}</text>
+  <view>
+    <button bindtap="searchPolicy">点击查看</button>
+  </view>
+</view>

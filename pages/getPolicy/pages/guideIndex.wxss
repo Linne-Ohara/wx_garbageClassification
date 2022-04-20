@@ -1,0 +1,11 @@
+/* guide/pages/guideIndex.wxss */
+.types {
+  width: 100%;
+  height: 350rpx;
+}
+
+.guideImgContainer {
+  height: 350rpx;
+  display: flex;
+  flex-direction: row;
+}

@@ -1,0 +1,100 @@
+/* pages/luntan_main/viewpinlun/viewpinlun.wxss */
+/* .thisCommentInner {
+  width: 97%;
+  margin: auto;
+  margin-top: 10rpx;
+  background-color: rgb(228, 227, 227);
+} */
+
+.thisComment {
+  width: auto;
+  margin-bottom: 50rpx;
+  background-color: rgb(241, 238, 238);
+  overflow: hidden;
+}
+
+.thisCommentUserPic {
+  display: block;
+  width: 120rpx;
+  height: 120rpx;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  border-radius: 60rpx;
+}
+
+.thisCommentText {
+  width: 95%;
+  height: auto;
+  margin: auto;
+  margin-top: 20rpx;
+  letter-spacing: 2rpx;
+}
+
+.thisCommentDetails {
+  margin-top: 10rpx;
+  font-size: 30rpx;
+  margin-left: 20rpx;
+}
+
+.thisCom_comment {
+  width: 97%;
+  margin: auto;
+  margin-top: 10rpx;
+  background-color: rgb(228, 227, 227);
+}
+
+.thisCom_thisComment {
+  height: auto;
+}
+
+.thisCom_commentText {
+  font-size: smaller;
+}
+
+.thisCom_commentDetail {
+  font-size: small;
+}
+
+.thisCom_commentUserPic {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 40rpx;
+}
+
+.inputname {
+  width: 95%;
+  height: 300rpx;
+  margin: auto;
+  border: 2rpx solid grey;
+}
+
+.sendComment {
+  width: 200rpx;
+  height: 100rpx;
+  margin: auto;
+  margin-top: 20rpx;
+  line-height: 100rpx;
+  border: 2rpx solid gray;
+  text-align: center;
+  border-radius: 10rpx;
+}
+
+.thisCommentImgContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.onePicImg {
+  display: block;
+  width: 400rpx;
+  margin: auto;
+  border: 2rpx solid rgb(218, 209, 209);
+}
+
+
+.morePicImg {
+  display: block;
+  width: 200rpx;
+}

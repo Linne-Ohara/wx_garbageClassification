@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "rubExplain":"../thisRubbishInformation/rubExplain/rubExplain",
+    "rubIndex":"../thisRubbishInformation/rubIndex/rubIndex"
+  }
+}

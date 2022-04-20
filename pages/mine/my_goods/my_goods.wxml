@@ -1,0 +1,16 @@
+<!--pages/mine/my_goods/my_goods.wxml-->
+<text>我的订单信息</text>
+
+<view wx:for="{{order}}" wx:for-item="item" wx:key="index" class="orderInformation">
+    <view  bindtap='togoodsname'  data-id="{{item.id}}">
+        <view >订单号：{{item.id}}</view>
+        <view >{{item.true_name}}</view>
+        <view >{{item.goodsname}}</view>
+        <view >{{item.phone_number}}</view>
+        <view >{{item.order_date}}</view>
+        <view >{{item.state}}</view>
+        <view wx:if="{{item.state=='未完成'}}"  bindtap='quRenOrder' data-id="{{item.id}}"> 
+        <button>确认</button>
+       </view>
+    </view>
+</view>

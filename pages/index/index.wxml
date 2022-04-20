@@ -1,0 +1,62 @@
+<!--index.wxml-->
+
+<!-- 根据数据的渲染页面 -->
+<view class="containerMain">
+
+  <!-- 城市定位 -->
+  <view class="cityPositionBar">
+    <view class="cityPositionBarAppear">
+      <navigator class="cityPositionButton" bindtap="getAddressAndUserProfile" url="">
+        <image src="../../images/position.svg" mode="widthFix" class="positionPic"></image>
+        <view class="cityPositioned">
+          {{county}}
+        </view>
+      </navigator>
+      
+    </view>
+
+  </view>
+
+  <!-- 轮播图 -->
+  <swiper class="goodInformationPic" indicator-dots="true" autoplay="true" interval="3000" duration="1200">
+    <block wx:for="{{picList}}" wx:for-item="item" wx:for-index="idx" wx:key="id">
+      <swiper-item>
+        <image src="{{urls+picUrl+item}}" class="slideImage" mode="widthFix"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="indexMainModel">
+    <!-- 渲染小图标模块 -->
+    <block wx:for="{{menuItemsObj.smallIcon}}" wx:key="item">
+      <navigator url="{{item.url}}" class="smallBox">
+        <image src='{{item.icon}}' class="smallBoxIcon" mode="heightFix"></image>
+        <view class="smallBoxText">{{item.text}}</view>
+      </navigator>
+    </block>
+
+    <!-- 渲染大图标模块 -->
+    <view class="bigBoxContainer">
+      <navigator catchtap="toQuestionIndex" class="bigBox">
+        <view class="bigBoxText">{{menuItemsObj.answerQuestion.text}}</view>
+        <view class="bigBoxTextExplain">{{menuItemsObj.answerQuestion.hint}}</view>
+        <image src="{{menuItemsObj.answerQuestion.icon}}" class="bigBoxImg" mode="widthFix"></image>
+      </navigator>
+      <navigator url="../picDiscriminate/pages/picDiscriminate" class="bigBox">
+        <view class="bigBoxText">{{menuItemsObj.picDiscriminate.text}}</view>
+        <view class="bigBoxTextExplain">{{menuItemsObj.picDiscriminate.hint}}</view>
+        <image src="{{menuItemsObj.picDiscriminate.icon}}" class="bigBoxImg" mode="widthFix"></image>
+      </navigator>
+    </view>
+    
+
+    <!-- 根据点击的对象进入垃圾分类指南页面不同模块 -->
+    <view class="guideImgContainer" bindtap="toclassify">
+      <image src="../../images/IndexPic/rubbishClass_01.gif" class="types" data-id="1"></image>
+      <image src="../../images/IndexPic/rubbishClass_02.gif" class="types" data-id="2"></image>
+      <image src="../../images/IndexPic/rubbishClass_03.gif" class="types" data-id="3"></image>
+      <image src="../../images/IndexPic/rubbishClass_04.gif" class="types" data-id="4"></image>
+    </view>
+  </view>
+</view>
+
+

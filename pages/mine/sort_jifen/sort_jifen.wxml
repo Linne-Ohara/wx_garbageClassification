@@ -1,0 +1,30 @@
+
+<!-- 测试数据 -->
+<view class="thisUser">
+      <view class="UserRank">排名</view>
+      <view class="UserName">用户</view>
+      <view class="UserScore">分数</view>
+</view>
+<view wx:for="{{newlist}}" wx:for-item="item" wx:for-index="idx" wx:key="id">
+      <view class="thisUser">
+            <!-- 用户排名 -->
+            <view class="thisUserRank">{{idx+1}}</view>
+            <!-- 用户头像 -->
+            <image src="{{item.touxiang}}" class="thisUserInfo" mode="widthFix"></image>
+            <!-- 用户昵称 -->
+            <view class="thisUserName">{{item.username}}</view>
+            <!-- 用户积分 -->
+            <view class="thisUserScore">{{item.jifen}}</view>
+      </view>
+</view>
+<view class="thisUser myself">
+      <!-- 用户排名 -->
+      <view class="thisUserRank">{{personalSort}}</view>
+      <!-- 用户头像 -->
+      <image src="{{userInfo}}" class="thisUserInfo" mode="widthFix"></image>
+      <!-- 用户昵称 -->
+      <view class="thisUserName">{{userName}}</view>
+      <!-- 用户积分 -->
+      <view class="thisUserScore">{{personalScore}}</view>
+</view>
+

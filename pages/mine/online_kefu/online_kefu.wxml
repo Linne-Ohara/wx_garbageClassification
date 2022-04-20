@@ -1,0 +1,6 @@
+<!--pages/mine/online_kefu/online_kefu.wxml-->
+
+<view class="shareBox">
+    <text>在线咨询</text>
+    <button type="primary" open-type="contact">在线咨询</button>
+  </view>

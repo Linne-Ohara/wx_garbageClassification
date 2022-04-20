@@ -1,0 +1,5 @@
+/* pages/news/newsdetail/newsdetail.wxss */
+.containerMain {
+  background-color: azure;
+  border-radius: 30rpx;
+}

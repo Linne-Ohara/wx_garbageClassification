@@ -1,0 +1,138 @@
+/**index.wxss**/
+/* 城市定位 */
+.cityPositionBar{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 20rpx;
+  width: 100%;
+  margin-top: 10rpx;
+  z-index: 2;
+}
+
+.cityPositionButton{
+  display: flex;
+  height: auto;
+  width: auto;
+  border-radius: 50rpx;
+  background-color: whitesmoke;
+  margin-left:0rpx;
+  margin-top: 0rpx;
+  text-align: center;
+  border: green solid 3px;
+}
+
+.positionPic {
+  width: 40rpx;
+}
+
+.cityPositionBarAppear{
+  width: auto;
+  height: 100rpx;
+}
+
+.cityPositioned{
+  width: auto;
+  /* font-size: small; */
+  /* padding-top: 1rpx; */
+}
+
+/* 轮播图片 */
+.goodInformationPic{
+  margin: auto;
+  width: 100%;
+  height: 350rpx;
+}
+
+.slideImage {
+  width: 100%;
+  height: 100%;
+}
+
+.indexMainModel {
+  height: 700rpx;
+  width: 96%;
+  display: flex;
+  margin: auto;
+  margin-top: 20rpx;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.smallBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  /* background-color: #fff; */
+  height: 200rpx;
+  /* border: 3rpx gray solid;
+  box-sizing: border-box;
+  margin:0rpx -3rpx -3rpx 0rpx ; 去除重叠的边框 */
+}
+
+.smallBoxIcon {
+  display: block;
+  height: 70rpx;
+  margin-bottom: 20rpx;
+}
+
+.smallBoxText {
+  font-size: smaller;
+}
+
+.bigBoxContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.bigBox {
+  position: relative;
+  width: 350rpx;
+  /* background-color: #fff; */
+  height: 200rpx;
+  border: 4rpx solid rgb(173, 173, 173);
+  box-sizing: border-box;
+  margin:0rpx -4rpx -4rpx 0rpx;
+  /* border-radius: 20rpx; */
+  background-color: #ffffff;
+}
+
+.bigBoxText {
+  position: absolute;
+  left: 10rpx;
+  top: 20%;
+}
+
+.bigBoxTextExplain {
+  position: absolute;
+  width: 200rpx;
+  font-size: small;
+  top: 55%;
+  left: 10rpx;
+}
+
+.bigBoxImg {
+  position: absolute;
+  width: 100rpx;
+  right: 15rpx;
+  top:45%;
+  transform: translate(0,-50%);
+}
+
+.guideImgContainer {
+  height: 350rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.types {
+  width: 100%;
+  height: 350rpx;
+}

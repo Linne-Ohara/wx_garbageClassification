@@ -1,0 +1,5 @@
+<!--pages/news/newsdetail/newsdetail.wxml-->
+<view class="containerMain">
+  <text>{{passage}}</text>
+</view>
+

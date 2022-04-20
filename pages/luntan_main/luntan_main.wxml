@@ -1,0 +1,39 @@
+<!--pages/lutan_main/luntan_main.wxml-->
+<view class="userContainerMain">
+  <view class="shareToOthers" bindtap='fatie'>分享</view>
+  <image src="{{userInfo}}" class="userImg"></image>
+  <view class="userName">{{userName}}</view>
+  <view class="userImgThroughLine"></view>
+</view>
+<view class="commentsArea">
+  <!--所有帖子-->
+  <block wx:for="{{luntan_list}}" wx:for-item="item" wx:key="id">
+    <view class="thisComment">
+      <image src="{{item.touxiang}}" class="thisCommentUserPic"></image>
+      <view class="thisCommentText">
+        <text>{{item.wenzi}}</text>
+      </view>
+      <view class="thisCommentImgContainer">
+        <view wx:for-item="innerItem" wx:for="{{item.tupian0}}" wx:key="item">
+          <block wx:if="{{item.tupian0.length == 0}}"></block>
+          <block wx:if="{{item.tupian0.length == 1}}">
+            <image src="{{urls+zhonzhui+innerItem}}" class="thisCommentImg onePicImg" mode="widthFix">
+            </image>
+          </block>
+          <block wx:if="{{item.tupian0.length > 1}}">
+            <image src="{{urls+zhonzhui+innerItem}}" class="morePicImg" mode="widthFix"></image>
+          </block>
+        </view>
+      </view>
+      
+      <view class="thisCommentDetails">
+        <view class="sendTime">发布时间：{{item.date}}</view>
+        <view class="commentNum">评论数：{{item.pinlun_num}}</view>
+      </view>
+      <view bindtap="pinlun" data-id="{{item.id}}" class="checkToCommentPage">
+        评论
+      </view>
+    </view>   
+  </block>
+</view>
+

@@ -1,0 +1,6 @@
+/* pages/mine/my_goods/my_goods.wxss */
+.orderInformation {
+  width: auto;
+  background-color: aliceblue;
+  border: 2rpx solid gray;
+}

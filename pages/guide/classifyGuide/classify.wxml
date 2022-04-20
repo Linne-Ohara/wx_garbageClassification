@@ -1,0 +1,45 @@
+<!-- <view class="header"></view> -->
+<!--主盒子-->
+<view class="body">
+  <view class="container">
+    <!--左侧栏-->
+    <view class="nav_left">
+        <block wx:for="{{title}}" wx:for-item="item" wx:key="index">
+            <!--  {{curNav == item.id ? 'active' : ''}} -->
+            <!-- 三目运算符是用来给当前选中的目录修改样式用的 -->
+            <!-- switchRightTab 函数是用来实现数据的渲染 -->
+            <!-- 当用户点击道不同的侧边栏目录时候，根据 data-id 去从数据库获取新的数据，渲染到左侧，并且修改 curNav 的值，使新样式添加到点击的目录上-->
+            <view class="nav_left_items {{curNav == item.id ? 'active' : ''}}" bindtap="switchRightTab" data-id="{{item.id}}">{{item.name}}</view>
+        </block>
+    </view>
+
+    <!--右侧栏-->
+    <view class="nav_right">
+
+            <!-- rubExplain,rubIndex是两个自定义组件,在thisRubbishInformation这个目录下 -->
+            <view wx:if="{{curNav==0}}">
+                <rubExplain inner-text="{{kehuishou}}"></rubExplain>
+                <rubIndex this-type-arr="{{kehuishou_list}}"></rubIndex>
+            </view>
+            <view wx:if="{{curNav==1}}">
+                <rubExplain inner-text="{{youhai}}"></rubExplain>
+                <rubIndex this-type-arr="{{youhai_list}}"></rubIndex>
+            </view>
+            <view wx:if="{{curNav==2}}">
+                <rubExplain inner-text="{{chuyu}}"></rubExplain>
+                <rubIndex this-type-arr="{{chuyu_list}}"></rubIndex>
+            </view>
+            <view wx:if="{{curNav==3}}">
+                <rubExplain inner-text="{{qita}}"></rubExplain>
+                <rubIndex this-type-arr="{{qita_list}}"></rubIndex>
+            </view>
+
+    </view>
+    <!-- 右侧栏结束 -->
+
+</view>
+
+</view>
+
+
+

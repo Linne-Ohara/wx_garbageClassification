@@ -1,0 +1,85 @@
+/* pages/sort_jifen/sort_jifen.wxss */
+.UserHeader {
+  position: relative;
+  height: 80rpx;
+  width: 100%;
+  background-color: #fff;
+}
+
+.thisUser {
+  position: relative;
+  height: 80rpx;
+  width: 100%;
+  background-color: #fff;
+}
+
+.thisUserRank {
+  position: absolute;
+  display: flex;
+  height: 100%;
+  width: auto;
+  text-align: center;
+  align-items: center;
+}
+
+.thisUserInfo {
+  position: absolute;
+  display: flex;  
+  width: 80rpx; 
+  left: 15%;
+  border-radius: 50%;
+}
+
+.thisUserName {
+  position: absolute;
+  display: flex;
+  width: auto;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  left: 27%;
+}
+
+.thisUserScore {
+  position: absolute;
+  display: flex;
+  width: auto;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  right: 0%;
+}
+
+.UserName {
+  position: absolute;
+  display: flex;
+  width: auto;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  left: 16%;
+}
+
+.UserScore {
+  position: absolute;
+  display: flex;
+  width: auto;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  right: 0%;
+}
+
+.UserRank {
+  position: absolute;
+  display: flex;
+  height: 100%;
+  width: auto;
+  text-align: center;
+  align-items: center;
+}
+
+.myself {
+  position: fixed;
+  bottom: 0;
+}

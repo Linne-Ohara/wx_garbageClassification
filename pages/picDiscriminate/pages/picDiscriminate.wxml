@@ -1,0 +1,59 @@
+<view class="page">
+  <view class="mainContainer">
+   
+    <view class="weui-cells">
+
+      <!-- 上传图片 -->
+      <view class="weui-cell">
+        <view class="weui-cell__bd">
+          <view>
+            <view class="weui-uploader__hd">
+              <view class="weui-uploader__title">上传图片</view>
+              <view>{{files.length}}</view>
+            </view>
+            <view class="weui-uploader__bd">
+              <view id="uploaderFiles">
+                <block wx:for="{{needUploadFiles}}" wx:key="*this">
+                  <view class="weui-uploader__file" data-type="UploadView">
+                    <icon class="weui-uploader__delFile" type="cancel" bindtap="delUploadingFiles" data-id="{{item}}"></icon>
+                    <image class="weui-uploader__img" src="{{item}}" mode="aspectFill" />
+                  </view>
+                </block>
+              </view>
+              <view class="weui-uploader__input-box">
+                <view class="weui-uploader__input" bindtap="chooseImage"></view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <!-- 识别结果 -->
+      <view class="result">识别结果</view>
+      <view class="resultContainer">
+        <view class="resultType">
+          {{discriminateResult}}
+        </view>
+        <block wx:for="{{detailResult}}" wx:for-item="item" wx:key="index">     
+          <view class="resultRate">
+            {{item}}
+          </view>
+        </block>
+        
+      </view>
+      
+      
+
+   </view>
+
+
+    
+   <!-- 按钮框 -->
+   <view>
+      <button class="discriminateButton" type="primary" bindtap='uploadFiles'>识别图片</button>
+      
+    </view>
+
+  </view>
+</view>
+

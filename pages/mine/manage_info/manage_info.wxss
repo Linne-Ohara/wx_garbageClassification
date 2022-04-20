@@ -1,0 +1,52 @@
+/* pages/mine/manage_info/manage_info.wxss */
+.allThisPage {
+  display: flex;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.containerMain {
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+  height: 450rpx;
+  margin: auto;
+  border: darkgrey 4rpx solid;
+  border-radius: 20rpx;
+  background-color: #ffffff;
+}
+
+.userpicAndnickName {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  height: 95%;
+  margin: auto;
+  margin-left: 3%;
+  background-color: skyblue;
+  border-radius: 20rpx;
+}
+
+.detailInformation {
+  width: 55%;
+  height: 95%;
+  margin: auto;
+  margin-right: 3%;
+  background-color: rgb(186, 222, 236);
+  border-radius: 20rpx;
+}
+
+.userInfo {
+  margin: auto;
+  margin-top: 30%;
+  width: 60%;
+}
+
+.usernickName {
+  margin: auto;
+  margin-top: 0;
+  height: 50rpx;
+  width: auto;
+}
+

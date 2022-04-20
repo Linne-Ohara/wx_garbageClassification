@@ -1,0 +1,23 @@
+<!--pages/mine/manage_info/manage_info.wxml-->
+
+
+
+<view class="allThisPage">
+<!-- <text>{{userName}}</text>
+<text>{{jifen}}</text>
+<text>{{addressDetail}}</text>
+<text>{{user_phone}}</text>
+<text>{{ture_name}}</text> -->
+  <view class="containerMain">
+    <view class="userpicAndnickName">
+      <image src="{{userInfo}}" class="userInfo" mode="widthFix"></image>
+      <view class="usernickName">{{userName}}</view>
+    </view>
+    <view class="detailInformation">
+      <text>积分：{{jifen}}\n</text>
+      <text>\n地址：{{addressDetail}}\n</text>
+      <text>\n真实姓名：{{ture_name}}\n</text>
+      <text>\n电话：{{user_phone}}\n</text>
+    </view>
+  </view>
+</view>

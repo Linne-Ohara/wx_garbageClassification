@@ -1,0 +1,8 @@
+/* pages/mine/about_us/about_us.wxss */
+.page {
+  display: block;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+
+}

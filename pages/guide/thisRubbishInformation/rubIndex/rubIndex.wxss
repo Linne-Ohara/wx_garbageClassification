@@ -1,0 +1,15 @@
+/* guide/thisRubbishInformation/rubIndex/rubIndex.wxss */
+.tableHeader {
+  width: auto;
+  height: 5vh;
+  margin-top: 5vh;
+  border-radius: 10rpx;
+  background-color: rgb(137, 223, 88);
+}
+.rubbishType {
+  height: 40vh;
+  width: auto;
+  border: 3rpx solid black;
+  border-radius: 10rpx;
+}
+

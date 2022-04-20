@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<view class="main" >
+<view style="background:url({{background}}) center center no-repeat; width:100%; height:100%; background-size: cover; top:50px; justify-content: center;">
+  <view class="header"></view>
+  <view class="userinfo">
+    <view class="userinfo-avatar">
+      <image src="{{userInfo}}" class="userHeaderPic"></image>
+    </view>
+  </view>
+  <view class="userNickName">{{userName}}</view>
+  <view class="usermotto">
+
+    <navigator data-num="1" class="navigator" bindtap="menuClick1" url="../../packageA/pages/questionPage/questionPage" hover-class="navigator-hover">{{enter}}</navigator>
+
+   
+    <navigator style = "color: #CDB03B;" url="../../packageA/pages/prc_all/prc_all" hover-class="navigator-hover" class="navigator">题库刷题</navigator>
+
+   <navigator style = "color: #CDB03B; padding: 40rpx" url="../../packageA/pages/wrong_set/wrong_set" hover-class="navigator-hover" class="navigator">错题集</navigator>
+   
+   <navigator style = "color: #CDB03B;" url="../../packageA/pages/collection/collection" hover-class="navigator-hover" class="navigator">收藏夹</navigator>
+
+   
+  </view>
+</view>
+</view>

@@ -1,0 +1,25 @@
+<!--pages/mine/shop_jifen/shop_jifen.wxml-->
+<text>积分商品</text>
+
+<view class="goodsContent">
+  <view wx:for="{{goods}}" wx:for-item="item" wx:for-index="idx" wx:key="id" >
+    <view  bindtap='togoodsname'  data-id="{{item.goodsname}}" class="goodInformation">
+        <!-- 商品图片 -->
+        <image src="{{urls+item.goodspicture+jpg}}" class="goodPic"></image>
+        <view class="goodText">
+          <!-- 商品名称 -->
+          <view class="goodName">{{item.goodsname}}</view>
+          <view class="haveAndprice">
+            <!-- 商品库存 -->
+            <view class="haveNum">库存：{{item.goodsnum}}</view>
+            <!-- 商品价格 -->
+            <view class="price">￥{{item.goodsprice}}</view>
+          </view>
+          
+          <!-- 商品所需积分 -->
+          <view class="needScore">积分：{{item.goodsjifen}}</view>
+        </view>
+    </view>
+  </view>
+</view>
+

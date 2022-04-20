@@ -1,0 +1,17 @@
+<!--pages/mine/shop_jifen/goods_introduct/exchange_good/exchange_good.wxml-->
+<text class="tipOrderInformation">请确定您的订单信息</text>
+<image src="{{urls+goodspic+jpg}}" class="goodInformationPic"></image>
+<view class="allInformation">
+  <view class="informationText"><text>姓名：{{ture_name}}</text></view>
+  <view class="informationText"><text>联系方式：{{user_phone}}</text></view>
+  <view class="informationText" id="address">
+      <view class="addressName">
+        地址：
+      </view>
+      <input class="addressInput" bindinput="name" value="{{name_value}}" placeholder="{{addressDetail}}"></input>
+  </view>
+</view>
+
+<button bindtap='duihuan' class="exchangeGood">确认兑换 </button>
+
+

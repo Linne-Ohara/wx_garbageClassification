@@ -1,0 +1,92 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/mine/mine",
+        "pages/mine/user/bindUser",
+        "pages/getPolicy/pages/guideIndex",
+        "pages/guide/classifyGuide/classify",
+        "pages/page_char/page_char",
+        "pages/mine/sort_jifen/sort_jifen",
+        "pages/picDiscriminate/pages/picDiscriminate",
+        "pages/error/update",
+        "pages/logs/logs",
+        "pages/mine/shop_jifen/shop_jifen",
+        "pages/mine/online_kefu/online_kefu",
+        "pages/mine/about_us/about_us",
+        "pages/mine/my_goods/my_goods",
+        "pages/mine/manage_info/manage_info",
+        "pages/mine/shop_jifen/goods_introduct/goods1/goods1",
+        "pages/mine/shop_jifen/goods_introduct/exchange_good/exchange_good",
+        "pages/mine/change_info/change_info",
+        "pages/news/news",
+        "pages/news/newsdetail/newsdetail",
+        "pages/luntan/luntan",
+        "pages/luntan_main/luntan_main",
+        "pages/luntan_main/viewpinlun/viewpinlun"
+    ],
+    "subPackages": [
+        {
+            "root": "question/packageA",
+            "pages": [
+                "pages/logs/logs",
+                "pages/questionPage/questionPage",
+                "pages/collection/collection",
+                "pages/wrong_set/wrong_set",
+                "pages/prc_all/prc_all"
+            ]
+        },
+        {
+            "root": "question/pages",
+            "pages": [
+                "index/index"
+            ]
+        }
+    ],
+    "permission": {
+        "scope.userLocation": {
+            "desc": "你的位置信息将用于小程序位置接口的效果展示"
+        }
+    },
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#449f45",
+        "navigationBarTitleText": "垃圾分类",
+        "navigationBarTextStyle": "white",
+        "enablePullDownRefresh": true
+    },
+    "tabBar": {
+        "custom": false,
+        "color": "#666666",
+        "selectedColor": "#449f45",
+        "backgroundColor": "#ffffff",
+        "borderStyle": "black",
+        "position": "bottom",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "iconPath": "images/icon-index.png",
+                "selectedIconPath": "images/icon-index-selected.png",
+                "text": "首页"
+            },
+            {
+                "pagePath": "pages/luntan_main/luntan_main",
+                "iconPath": "images/share.png",
+                "selectedIconPath": "images/share-selected.png",
+                "text": "分享"
+              },
+            {
+                "pagePath": "pages/mine/mine",
+                "iconPath": "images/icon-mine.png",
+                "selectedIconPath": "images/icon-mine-selected.png",
+                "text": "我的"
+            }
+        ]
+    },
+    "plugins": {
+        "WechatSI": {
+          "version": "0.3.5",
+          "provider": "wx069ba97219f66d99"
+        }
+      },
+    "sitemapLocation": "sitemap.json"
+}

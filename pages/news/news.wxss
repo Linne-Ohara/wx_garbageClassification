@@ -1,0 +1,15 @@
+/* pages/news/news.wxss */
+.containerMain {
+  width: 95vw;
+  background-color: azure;
+  align-items: flex-start;
+  margin: auto;
+}
+
+.itemNew {
+  width: 100%;
+  margin-top: 10rpx;
+  font-size: larger;
+  border: gray 2rpx solid;
+  border-radius: 18rpx;
+}

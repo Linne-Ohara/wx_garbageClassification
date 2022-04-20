@@ -1,0 +1,27 @@
+<!--pages/index/mine.wxml-->
+
+<view class="container">
+  <view class='head head-height'>
+    <view bindtap="bindViewTap" class="userinfo-avatar">
+      <image src="{{userInfo}}" class="userHeaderPic" bindtap="getHeadPic"></image>
+    </view>
+  <view class="userinfo-nickname">
+    <text>{{userName}}\n</text>
+    <text class="userinfo-score">当前积分：{{jifen}}</text>
+  </view>
+  </view>
+
+
+
+  <view class="listContainer">
+    <block wx:for="{{menuitems}}" wx:key="item">
+      <navigator url="{{item.url}}" catchtap='{{item.tap}}' class="listBox">
+        <image src='{{item.icon}}' class="listBoxImg" mode="heightFix"></image>
+        <view class="listText">{{item.text}}</view>
+      </navigator>
+    </block>
+  </view>
+
+
+
+</view>

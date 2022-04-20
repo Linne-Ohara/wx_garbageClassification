@@ -1,0 +1,42 @@
+/* pages/mine/shop_jifen/shop_jifen.wxss */
+.goodsContent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.goodInformation {
+  width: 50vw;
+  height: 500rpx;
+}
+
+.goodPic {
+  width: 100%;
+  height: 300rpx;
+}
+
+.goodText {
+  height: 200rpx;
+}
+
+.goodName {
+  font-size: 28rpx;
+}
+
+.haveAndprice {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+.haveNum {
+  width: 50%;
+  font-size: 24rpx;
+}
+.price {
+  width: 50%;
+  font-size: 24rpx;
+}
+.needScore {
+  text-align: center;
+}
